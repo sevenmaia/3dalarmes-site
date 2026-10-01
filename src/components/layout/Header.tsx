@@ -54,9 +54,9 @@ export function Header() {
       )}
     >
       <div className="max-w-[1240px] mx-auto px-6 flex items-center justify-between">
-        {/* LOGO OFICIAL 3D ALARMES FRONTAL */}
-        <Link href="/" className="flex items-center group">
-          <div className="relative w-12 h-14 md:w-13 md:h-15 shrink-0 transition-transform duration-200 group-hover:scale-105">
+        {/* LOGO OFICIAL 3D ALARMES COM IDENTIDADE COMPLETA (SÍMBOLO + NOME) */}
+        <Link href="/" className="flex items-center gap-2.5 sm:gap-3 group shrink-0">
+          <div className="relative w-10 h-12 sm:w-11 sm:h-13 md:w-12 md:h-14 shrink-0 transition-transform duration-200 group-hover:scale-105">
             <Image
               src="/logos/logo-frontal.png"
               alt="3D ALARMES — Segurança Eletrônica"
@@ -64,6 +64,14 @@ export function Header() {
               className="object-contain"
               priority
             />
+          </div>
+          <div className="flex flex-col">
+            <span className="text-lg sm:text-xl md:text-[22px] font-black tracking-tight text-white uppercase leading-none group-hover:text-yellow-400 transition-colors">
+              3D ALARMES
+            </span>
+            <span className="text-[9px] sm:text-[10px] font-bold tracking-[0.18em] text-yellow-400 uppercase mt-1 leading-none">
+              SEGURANÇA ELETRÔNICA
+            </span>
           </div>
         </Link>
 
